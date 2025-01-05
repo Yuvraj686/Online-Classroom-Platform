@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Classroom</title>
+    <style>
+        body
+        {
+        background-size: cover;
+        height: 100vh;
+        
+        }
+
+        .all {
+            font-family: sans-serif;
+            display: flex;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            
+            
+        }
+        .dev-side {
+            flex: 1;
+            padding: 2rem;
+            text-align: center;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .dev-side h2 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            height: 5px ;
+            width: 20vw;
+            opacity: 0.9;
+            
+        }
+        .dev-side p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+            background-color: #ffffff;
+            border-radius: 1.3cap;
+        }
+        .dev-button {
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            border: 2px solid black;
+            background-color: rgb(146, 158, 102);
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 1rem;
+            background-repeat: no-repeat;
+            text-decoration: none;
+        }
+        .dev-button:hover {
+            
+            color: rgb(255, 255, 0);
+            border-radius: 5px;
+        }
+        #cpp-side {
+            
+        }
+        #webdev-side {
+
+        }
+
+        .videocontainer
+        {
+            position: absolute;
+            object-fit: cover;
+        }
+        
+        .home .video-container video{
+  position: absolute;
+  top:0; left: 0;
+  z-index: -1;
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.home .controls{
+  padding:1rem;
+  border-radius: 5rem;
+  background:rgba(0,0,0,.7);
+  position: relative;
+  top:10rem;
+}
+
+.home .controls .vid-btn{
+  height:2rem;
+  width:2rem;
+  display: inline-block;
+  border-radius: 50%;
+  background:#fff;
+  cursor: pointer;
+  margin:0 .5rem;
+}
+    </style>
+</head>
+<body>
+    
+    <section>
+<div class="all" >
+    <div class="dev-side" id="cpp-side">
+        
+        <h2 style="color: hsl(0, 0%, 6%);" >Dive into C++</h2>
+        <p style="background-color: rgb(255, 255, 255);" style="color: white;">Master performance and control with C++. This powerful language is used for game development, system programming, and more.</p>
+        <a href="cpp.html" target="_blank" class="dev-button">Learn C++ Now</a> 
+    </div>
+    <div class="dev-side" id="webdev-side">
+        <h2 style="color: hsl(0, 0%, 6%);">Craft Interactive Web Experiences</h2>
+        <br>
+        <p>Become a web developer and build dynamic websites and applications! Explore HTML, CSS, and JavaScript.</p>
+        <a href="index.html" target="_blank" class="dev-button">Start Your Web Dev Journey</a>
+    </div>
+</div>
+<section class="home" id="home">
+    
+
+
+
+    <div class="video-container">
+      <video src="vid01.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+  </section>
+</section>
+</body>
+</html>
+
